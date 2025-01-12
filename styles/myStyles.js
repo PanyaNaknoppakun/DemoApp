@@ -30,8 +30,8 @@ export const myStyle = StyleSheet.create({
     margin: 10, // เพิ่ม margin ด้านล่าง
   },
   imagelogo: {
-    width: 80, // ขยายขนาดของ logo
-    height: 80,
+    width: 90, // ขยายขนาดของ logo
+    height: 90,
     marginBottom: 20,
     marginHorizontal: 10,
   },
