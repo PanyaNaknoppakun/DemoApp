@@ -3,7 +3,7 @@ import { myStyle } from "../styles/MyStyles";
 import { useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const AsyncStorageScreen = () => {
+const AsyncStorageExample = () => {
   const [name, setName] = useState("");
   const [savedName, setSavedName] = useState("");
 
@@ -68,4 +68,4 @@ const AsyncStorageScreen = () => {
   );
 };
 
-export default AsyncStorageScreen;
+export default AsyncStorageExample;

@@ -1,7 +1,7 @@
 import { SectionList, Text, View } from "react-native";
 import { myStyle } from "../styles/MyStyles";
 
-const SectionListScreen = () => {
+const SectionListExample = () => {
   const DATA = [
     {
       title: "Fruits",
@@ -55,4 +55,4 @@ const SectionListScreen = () => {
   );
 };
 
-export default SectionListScreen;
+export default SectionListExample;

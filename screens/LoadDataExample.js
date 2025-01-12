@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ActivityIndicator, Text, View } from "react-native";
 import { myStyle } from "../styles/MyStyles";
 
-const LoadDataScreen = () => {
+const LoadDataExample = () => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
   
@@ -41,4 +41,4 @@ const LoadDataScreen = () => {
     );
 };
 
-export default LoadDataScreen;
+export default LoadDataExample;

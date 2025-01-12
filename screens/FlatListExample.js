@@ -4,7 +4,7 @@ import AddForm from "../components/AddForm";
 import Person from "../components/Person";
 import { myStyle } from "../styles/MyStyles";
 
-const FlatListScreen = () => {
+const FlatListExample = () => {
   const [data, setData] = useState([
     { id: 1, name: "panya", age: 15 },
     { id: 2, name: "preyanuch", age: 12 },
@@ -63,4 +63,4 @@ const FlatListScreen = () => {
   );
 };
 
-export default FlatListScreen;
+export default FlatListExample;

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ScrollView, Text, View } from "react-native";
 import { myStyle } from "../styles/MyStyles";
 
-const ScrollViewScreen = () => {
+const ScrollViewExample = () => {
   const [developerContent, setContent] = useState({
     name: "???? ?..",
     content: "????",
@@ -45,4 +45,4 @@ const ScrollViewScreen = () => {
   );
 };
 
-export default ScrollViewScreen;
+export default ScrollViewExample;

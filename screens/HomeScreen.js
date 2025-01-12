@@ -17,55 +17,91 @@ const HomeScreen = ({ navigation }) => {
         </View>
         <View style={{ margin: 4 }}>
           <Button
-            title="Button_Screen"
+            title="ButtonExample"
             color="green"
             onPress={() => {
-              navigation.navigate("ButtonScreen");
+              navigation.navigate("ButtonExample");
             }}
           />
         </View>
         <View style={{ margin: 4 }}>
           <Button
-            title="ScrollView_Screen"
+            title="ScrollViewExample"
             color="green"
             onPress={() => {
-              navigation.navigate("ScrollViewScreen");
+              navigation.navigate("ScrollViewExample");
             }}
           />
         </View>
         <View style={{ margin: 4 }}>
           <Button
-            title="FlatList_Screen"
+            title="FlatListExample"
             color="green"
             onPress={() => {
-              navigation.navigate("FlatListScreen");
+              navigation.navigate("FlatListExample");
             }}
           />
         </View>
         <View style={{ margin: 4 }}>
           <Button
-            title="SectionList_Screen"
+            title="SectionListExample"
             color="green"
             onPress={() => {
-              navigation.navigate("SectionListScreen");
+              navigation.navigate("SectionListExample");
             }}
           />
         </View>
         <View style={{ margin: 4 }}>
           <Button
-            title="LoadData_Screen"
+            title="LoadDataExample"
             color="green"
             onPress={() => {
-              navigation.navigate("LoadDataScreen");
+              navigation.navigate("LoadDataExample");
             }}
           />
         </View>
         <View style={{ margin: 4 }}>
           <Button
-            title="AsyncStorage_Screen"
+            title="AsyncStorageExample"
             color="green"
             onPress={() => {
-              navigation.navigate("AsyncStorageScreen");
+              navigation.navigate("AsyncStorageExample");
+            }}
+          />
+        </View>
+        <View style={{ margin: 4 }}>
+          <Button
+            title="LifecycleWithClassExample_Screen"
+            color="green"
+            onPress={() => {
+              navigation.navigate("LifecycleWithClassExample");
+            }}
+          />
+        </View>
+        <View style={{ margin: 4 }}>
+          <Button
+            title="LifecycleWithUseEffectExample"
+            color="green"
+            onPress={() => {
+              navigation.navigate("LifecycleWithUseEffectExample");
+            }}
+          />
+        </View>
+        <View style={{ margin: 4 }}>
+          <Button
+            title="Share_UseContext_UpdateDataExample"
+            color="green"
+            onPress={() => {
+              navigation.navigate("ShareUseContextUpdateDataExample");
+            }}
+          />
+        </View>
+        <View style={{ margin: 4 }}>
+          <Button
+            title="Share_UseContext_GetDataExample"
+            color="green"
+            onPress={() => {
+              navigation.navigate("ShareUseContextGetDataExample");
             }}
           />
         </View>

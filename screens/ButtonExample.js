@@ -1,7 +1,7 @@
 import { Button, Text, TouchableOpacity, View } from "react-native";
 import { myStyle } from "../styles/MyStyles";
 
-const ButtonScreen = () => {
+const ButtonExample = () => {
   return (
     <View style={{ margin: 20 }}>
       <TouchableOpacity
@@ -25,4 +25,4 @@ const ButtonScreen = () => {
   );
 }
 
-export default ButtonScreen
+export default ButtonExample
