@@ -1,15 +1,15 @@
 import { Button, Image, ScrollView, View } from "react-native";
-import { myStyle } from "../styles/MyStyles";
+import { myStyle } from "../styles/myStyles";
 const logo = require("../assets/icon.png");
 
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={myStyle.screenContainer}>
-      <ScrollView contentContainerStyle={myStyle.contentContainer}>
+      <ScrollView contentContainerStyle={myStyle.screenContainer}>
         <View style={myStyle.horizontalContainer}>
           <Image
             source={{
-              uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4jV0EwprdCMTuD_VCca9pU2QTciWI6DLgg&s"
+              uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4jV0EwprdCMTuD_VCca9pU2QTciWI6DLgg&s",
             }}
             style={myStyle.imagelogo}
           ></Image>

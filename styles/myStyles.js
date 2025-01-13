@@ -7,14 +7,13 @@ export const myStyle = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 30,
-    padding: 20, // เพิ่มการ padding รอบๆ ของ container
   },
   screenContainer: {
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "flex-start",
-    padding: 20,
+    padding: 10
   },
   header: {
     fontSize: 20,

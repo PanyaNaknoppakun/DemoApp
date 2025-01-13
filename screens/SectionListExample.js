@@ -1,5 +1,5 @@
 import { SectionList, Text, View } from "react-native";
-import { myStyle } from "../styles/MyStyles";
+import { myStyle } from "../styles/myStyles";
 
 const SectionListExample = () => {
   const DATA = [
@@ -36,9 +36,11 @@ const SectionListExample = () => {
   return (
     <SectionList
       sections={DATA}
-    //   horizontal={true} // true will show horizontal list
+      //   horizontal={true} // true will show horizontal list
       keyExtractor={(item, index) => item + index}
-      renderItem={({ item }) => <Text style={myStyle.sectionContentList}>{item}</Text>}
+      renderItem={({ item }) => (
+        <Text style={myStyle.sectionContentList}>{item}</Text>
+      )}
       renderSectionHeader={({ section: { title } }) => (
         <Text style={myStyle.sectionTitle}>{title}</Text>
       )}
@@ -48,8 +50,12 @@ const SectionListExample = () => {
       ListFooterComponent={() => (
         <Text style={myStyle.sectionTitle}>End of List</Text>
       )}
-      SectionSeparatorComponent={() => <View style={{ height: 1, backgroundColor: '#ccc' }} />}
-      ItemSeparatorComponent={() => <View style={{ height: 1, backgroundColor: '#ccc' }} />}
+      SectionSeparatorComponent={() => (
+        <View style={{ height: 1, backgroundColor: "#ccc" }} />
+      )}
+      ItemSeparatorComponent={() => (
+        <View style={{ height: 1, backgroundColor: "#ccc" }} />
+      )}
       initialScrollIndex={0}
     />
   );

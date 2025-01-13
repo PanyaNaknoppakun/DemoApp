@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ScrollView, Text, View } from "react-native";
-import { myStyle } from "../styles/MyStyles";
+import { myStyle } from "../styles/myStyles";
 
 const ScrollViewExample = () => {
   const [developerContent, setContent] = useState({

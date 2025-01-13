@@ -1,5 +1,5 @@
 import { Text, TouchableOpacity, View } from "react-native";
-import { myStyle } from "../styles/MyStyles";
+import { myStyle } from "../styles/myStyles";
 
 export default function Person({ item, deleteData }) {
   return (

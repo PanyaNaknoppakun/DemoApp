@@ -1,5 +1,5 @@
 import { Button, Text, TouchableOpacity, View } from "react-native";
-import { myStyle } from "../styles/MyStyles";
+import { myStyle } from "../styles/myStyles";
 
 const ButtonExample = () => {
   return (
@@ -23,6 +23,6 @@ const ButtonExample = () => {
       </View>
     </View>
   );
-}
+};
 
-export default ButtonExample
+export default ButtonExample;

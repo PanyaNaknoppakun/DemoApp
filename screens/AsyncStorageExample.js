@@ -1,5 +1,5 @@
 import { Alert, Button, Text, TextInput, View } from "react-native";
-import { myStyle } from "../styles/MyStyles";
+import { myStyle } from "../styles/myStyles";
 import { useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 

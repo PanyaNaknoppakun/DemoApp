@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 import { Button, Text, TextInput, View } from "react-native";
-import { myStyle } from "../styles/MyStyles";
+import { myStyle } from "../styles/myStyles";
 
 // สร้าง Context
 export const ShareContext = createContext();

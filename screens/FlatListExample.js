@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Alert, Button, FlatList, Text, View } from "react-native";
 import AddForm from "../components/AddForm";
 import Person from "../components/Person";
-import { myStyle } from "../styles/MyStyles";
+import { myStyle } from "../styles/myStyles";
 
 const FlatListExample = () => {
   const [data, setData] = useState([

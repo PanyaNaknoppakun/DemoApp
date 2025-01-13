@@ -1,5 +1,5 @@
 import { Button, TextInput, View } from "react-native";
-import { myStyle } from "../styles/MyStyles";
+import { myStyle } from "../styles/myStyles";
 import { useState } from "react";
 
 export default function AddForm({ insertData }) {
