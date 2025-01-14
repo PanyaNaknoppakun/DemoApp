@@ -14,7 +14,7 @@ const ButtonExample = () => {
         </View>
       </TouchableOpacity>
 
-      <View style={myStyle.buttonText}>
+      <View style={myStyle.button}>
         <Button title="button2" />
       </View>
 

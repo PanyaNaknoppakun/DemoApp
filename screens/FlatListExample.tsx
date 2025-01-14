@@ -4,13 +4,24 @@ import AddForm from "../components/AddForm";
 import Person from "../components/Person";
 import { myStyle } from "../styles/myStyles";
 
+class PersonObj {
+  id: Number;
+  name: String;
+  age: Number;
+  constructor(id: number, name: string, age: Number) {
+    this.id = id;
+    this.name = name;
+    this.age = age;
+  }
+}
+
 const FlatListExample = () => {
   const [data, setData] = useState([
-    { id: 1, name: "panya", age: 15 },
-    { id: 2, name: "preyanuch", age: 12 },
-    { id: 3, name: "prechaya", age: 6 },
-    { id: 4, name: "pikun", age: 66 },
-    { id: 5, name: "pikun2", age: 61 },
+    new PersonObj(1, "panya", 15),
+    new PersonObj(2, "preyanuch", 12),
+    new PersonObj(3, "prechaya", 6),
+    new PersonObj(4, "pikun", 66),
+    new PersonObj(5, "pikun2", 61),
   ]);
 
   const runningId = useRef(data.length + 1); // ใช้ useRef สำหรับ runningId
@@ -20,10 +31,10 @@ const FlatListExample = () => {
     return newId;
   };
 
-  const insertData = (name, age) => {
+  const insertData = (name: String, age: Number) => {
     if (name) {
-      setData((prevData) => {
-        return [{ id: itemRunningId(), x, age }, ...prevData];
+      setData((prevData: Array<any>) => {
+        return [{ id: itemRunningId(), name, age }, ...prevData];
       });
     } else {
       Alert.alert("แจ้งเตือน", "กรุณาเพิ่มข้อมูลให้ครบถ้วน");
@@ -36,7 +47,7 @@ const FlatListExample = () => {
         renderItem={({ item }) => (
           <Person
             item={item}
-            deleteData={(id) => {
+            deleteData={(id: Number) => {
               console.log("ลบ data: " + id);
               setData((prevData) => {
                 return prevData.filter((item) => item.id != id);
@@ -44,7 +55,7 @@ const FlatListExample = () => {
             }}
           />
         )}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => String(item.id)}
         ListEmptyComponent={<Text style={{ marginTop: 4 }}>ไม่มีข้อมูล</Text>}
       />
       <AddForm insertData={insertData} />
