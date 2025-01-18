@@ -11,7 +11,11 @@ import LoadDataExample from "./screens/LoadDataExample";
 import ScrollViewExample from "./screens/ScrollViewExample";
 import SectionListExample from "./screens/SectionListExample";
 import ShareUseContextGetDataExample from "./screens/ShareUseContextGetDataExample";
-import ShareUseContextUpdateDataExample, { ShareProvider } from "./screens/ShareUseContextUpdateDataExample";
+import ShareUseContextUpdateDataExample, {
+  ShareProvider,
+} from "./screens/ShareUseContextUpdateDataExample";
+import OpenCameraExampleScreen from "./share/presentation/views/OpenCameraExampleScreen";
+import MVVMExampleScreen from "./share/presentation/views/MVVMExampleScreen";
 
 const Stack = createStackNavigator();
 
@@ -51,6 +55,14 @@ export default function App() {
           <Stack.Screen
             name="ShareUseContextUpdateDataExample"
             component={ShareUseContextUpdateDataExample}
+          />
+          <Stack.Screen
+            name="MVVMExampleScreen"
+            component={MVVMExampleScreen}
+          />
+          <Stack.Screen
+            name="OpenCameraExampleScreen"
+            component={OpenCameraExampleScreen}
           />
         </Stack.Navigator>
       </NavigationContainer>

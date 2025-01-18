@@ -34,6 +34,12 @@ export const myStyle = StyleSheet.create({
     marginBottom: 20,
     marginHorizontal: 10,
   },
+  imagecontent: {
+    width: 180, // ขยายขนาดของ logo
+    height: 180,
+    marginBottom: 20,
+    marginHorizontal: 10,
+  },
   content: {
     margin: 14,
     backgroundColor: "#FF6347", // เปลี่ยนสีพื้นหลัง

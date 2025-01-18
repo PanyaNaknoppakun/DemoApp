@@ -105,6 +105,24 @@ const HomeScreen = ({ navigation }) => {
             }}
           />
         </View>
+        <View style={{ margin: 4 }}>
+          <Button
+            title="MVVM_ExampleScreen"
+            color="green"
+            onPress={() => {
+              navigation.navigate("MVVMExampleScreen");
+            }}
+          />
+        </View>
+        <View style={{ margin: 4 }}>
+          <Button
+            title="OpenCamera_ExampleScreen"
+            color="green"
+            onPress={() => {
+              navigation.navigate("OpenCameraExampleScreen");
+            }}
+          />
+        </View>
       </ScrollView>
     </View>
   );
